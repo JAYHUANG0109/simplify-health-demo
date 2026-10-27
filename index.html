@@ -4,12 +4,12 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Simplify Health Prototype</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231F5C4A'/><path d='M16 9v14M9 16h14' stroke='white' stroke-width='2.6' stroke-linecap='round'/></svg>" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231B5E20'/><path d='M16 9v14M9 16h14' stroke='white' stroke-width='2.6' stroke-linecap='round'/></svg>" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet" />
 <style>
-  :root { --ground: #f6f8f7; --ink: #0f1714; --ink2: #444e4a; --line: #e1e6e3; --sage: #1f5c4a; --sage-bg: #e2eee9; --peach: #9e4a33; --peach-bg: #fadfd3; }
+  :root { --ground: #f7f9f7; --ink: #111a14; --ink2: #46514a; --line: #e3e9e4; --sage: #1b5e20; --sage-bg: #e8f5e9; --sage-mid: #2e7d32; --sage-tint: #c8e6c9; }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--ground); color: var(--ink); font: 16px/1.5 "Geist", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
   main { max-width: 720px; margin: 0 auto; padding: 64px 20px; }
@@ -19,15 +19,15 @@
   p.lead { color: var(--ink2); margin: 0 0 32px; max-width: 56ch; }
   .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
   a.card { display: block; text-decoration: none; color: inherit; background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 24px; transition: transform .15s, box-shadow .15s; }
-  a.card:hover { transform: translateY(-2px); box-shadow: 0 10px 28px -10px rgb(15 23 20 / .2); }
+  a.card:hover { transform: translateY(-2px); box-shadow: 0 10px 28px -10px rgb(17 26 20 / .18); }
   a.card:focus-visible { outline: 2px solid var(--sage); outline-offset: 2px; }
-  .tag { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; padding: 3px 10px; border-radius: 999px; }
+  .tag { display: inline-block; font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 999px; }
   .web .tag { background: var(--sage-bg); color: var(--sage); }
-  .app .tag { background: var(--peach-bg); color: var(--peach); }
+  .app .tag { background: var(--sage-tint); color: var(--sage); }
   .card h2 { font-size: 20px; font-weight: 600; letter-spacing: -0.02em; margin: 14px 0 4px; }
   .card p { color: var(--ink2); margin: 0 0 16px; font-size: 15px; }
   .go { font-weight: 600; color: var(--sage); }
-  .app .go { color: var(--peach); }
+  .app .go { color: var(--sage-mid); }
   footer { margin-top: 40px; color: var(--ink2); font-size: 14px; border-top: 1px solid var(--line); padding-top: 20px; }
   footer ol { padding-left: 20px; margin: 8px 0 0; }
 </style>
