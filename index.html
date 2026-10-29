@@ -28,6 +28,13 @@
   .card p { color: var(--ink2); margin: 0 0 16px; font-size: 15px; }
   .go { font-weight: 600; color: var(--sage); }
   .app .go { color: var(--sage-mid); }
+  a.live { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 16px; text-decoration: none; color: inherit; background: var(--sage-bg); border: 1px solid var(--sage-tint); border-radius: 10px; padding: 18px 24px; }
+  a.live:hover { border-color: var(--sage-mid); }
+  a.live:focus-visible { outline: 2px solid var(--sage); outline-offset: 2px; }
+  a.live strong { display: block; font-size: 17px; letter-spacing: -0.01em; }
+  a.live span.sub { color: var(--ink2); font-size: 14.5px; }
+  a.live .go { white-space: nowrap; }
+  @media (max-width: 520px) { a.live { flex-direction: column; align-items: flex-start; } }
   footer { margin-top: 40px; color: var(--ink2); font-size: 14px; border-top: 1px solid var(--line); padding-top: 20px; }
   footer ol { padding-left: 20px; margin: 8px 0 0; }
 </style>
@@ -51,6 +58,10 @@
       <span class="go">Open app version →</span>
     </a>
   </div>
+  <a class="live" href="https://simplify-health-b275.web.app" target="_blank" rel="noopener noreferrer">
+    <div><strong>Try the real prototype</strong><span class="sub">Real clinicians near any ZIP, typical costs, and your own account for visits, bills and your plan. Works on a phone too.</span></div>
+    <span class="go">Open simplify-health-b275.web.app →</span>
+  </a>
   <footer>
     <strong>Demo story</strong>
     <ol>
